@@ -1,2 +1,4 @@
-export { transcribe as experimental_transcribe } from './transcribe';
-export type { TranscriptionResult as Experimental_TranscriptionResult } from './transcribe-result';
+/** @group Transcription */
+export { transcribe } from './transcribe';
+/** @group Transcription */
+export type { TranscriptionResult as TranscribeResult } from './transcribe-result';

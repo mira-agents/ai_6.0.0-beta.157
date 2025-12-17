@@ -1,20 +1,27 @@
 // re-exports:
+/** @group Providers */
 export { createGateway, gateway, type GatewayModelId } from '@ai-sdk/gateway';
+/** @group Schema */
 export {
   asSchema,
-  createIdGenerator,
-  dynamicTool,
-  generateId,
   jsonSchema,
-  parseJsonEventStream,
-  tool,
   zodSchema,
   type FlexibleSchema,
-  type IdGenerator,
   type InferSchema,
+  type Schema,
+} from '@ai-sdk/provider-utils';
+/** @group Utilities */
+export {
+  createIdGenerator,
+  generateId,
+  type IdGenerator,
+} from '@ai-sdk/provider-utils';
+/** @group Tools */
+export {
+  dynamicTool,
+  tool,
   type InferToolInput,
   type InferToolOutput,
-  type Schema,
   type Tool,
   type ToolApprovalRequest,
   type ToolApprovalResponse,
@@ -22,6 +29,8 @@ export {
   type ToolExecutionOptions,
   type ToolExecuteFunction,
 } from '@ai-sdk/provider-utils';
+/** @group Streaming */
+export { parseJsonEventStream } from '@ai-sdk/provider-utils';
 
 // directory exports
 export * from './agent';
@@ -44,6 +53,7 @@ export * from './ui-message-stream';
 export * from './util';
 
 // telemetry types:
+/** @group Telemetry & Logging */
 export type { TelemetrySettings } from './telemetry/telemetry-settings';
 
 // import globals

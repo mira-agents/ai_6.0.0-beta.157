@@ -6,6 +6,7 @@ import { TranscriptionModelV2 } from '../../transcription-model/v2/transcription
 
 /**
  * Provider for language, text embedding, and image generation models.
+ * @group Providers
  */
 export interface ProviderV2 {
   /**

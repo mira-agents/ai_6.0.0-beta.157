@@ -11,4 +11,7 @@ export * from './shared/index';
 export * from './speech-model/index';
 export * from './transcription-model/index';
 
+/**
+ * @group Schema
+ */
 export type { JSONSchema7, JSONSchema7Definition } from 'json-schema';

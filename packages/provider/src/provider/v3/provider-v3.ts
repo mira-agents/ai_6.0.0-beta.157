@@ -7,6 +7,7 @@ import { TranscriptionModelV3 } from '../../transcription-model/v3/transcription
 
 /**
  * Provider for language, text embedding, and image generation models.
+ * @group Providers
  */
 export interface ProviderV3 {
   readonly specificationVersion: 'v3';

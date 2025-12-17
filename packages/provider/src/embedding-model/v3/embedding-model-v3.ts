@@ -11,6 +11,7 @@ Specification for an embedding model that implements the embedding model
 interface version 3.
 
 It is specific to text embeddings.
+ * @group Models
  */
 export type EmbeddingModelV3 = {
   /**

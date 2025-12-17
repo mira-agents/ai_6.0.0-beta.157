@@ -1,9 +1,8 @@
+/** @group Object Generation */
 export { generateObject } from './generate-object';
-export type { RepairTextFunction } from './repair-text';
+/** @group Object Generation */
 export type { GenerateObjectResult } from './generate-object-result';
+/** @group Object Generation */
 export { streamObject } from './stream-object';
-export type { StreamObjectOnFinishCallback } from './stream-object';
-export type {
-  ObjectStreamPart,
-  StreamObjectResult,
-} from './stream-object-result';
+/** @group Object Generation */
+export type { StreamObjectResult } from './stream-object-result';

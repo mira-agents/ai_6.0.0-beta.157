@@ -1,4 +1,6 @@
+/** @group Prompts */
 export type { CallSettings } from './call-settings';
+/** @group Prompts */
 export {
   assistantModelMessageSchema,
   modelMessageSchema,
@@ -6,9 +8,11 @@ export {
   toolModelMessageSchema,
   userModelMessageSchema,
 } from './message';
+/** @group Prompts */
 export type { Prompt } from './prompt';
 
 // re-export types from provider-utils
+/** @group Prompts */
 export type {
   AssistantContent,
   AssistantModelMessage,

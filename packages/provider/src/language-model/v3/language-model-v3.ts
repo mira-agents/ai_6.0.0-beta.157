@@ -9,6 +9,7 @@ import { LanguageModelV3Usage } from './language-model-v3-usage';
 
 /**
 Specification for a language model that implements the language model interface version 3.
+ * @group Models
  */
 export type LanguageModelV3 = {
   /**
