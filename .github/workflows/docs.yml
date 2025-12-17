@@ -5,10 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'packages/ai/src/**'
-      - 'packages/ai/typedoc.json'
-      - 'packages/ai/package.json'
-      - 'packages/ai/tsconfig.json'
+      - 'ai_docs/**'
   workflow_dispatch:
 
 permissions:
@@ -21,7 +18,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -29,24 +26,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10.11.0
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Build TypeDoc
-        working-directory: packages/ai
-        run: pnpm docs
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
