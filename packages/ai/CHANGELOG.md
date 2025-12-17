@@ -1,5 +1,11 @@
 # ai
 
+## 6.0.0-beta.159
+
+### Patch Changes
+
+- 3071620: fix header loss when statusText is undefined in writeHead
+
 ## 6.0.0-beta.158
 
 ### Patch Changes
