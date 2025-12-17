@@ -1,36 +1,6 @@
 // re-exports:
 /** @group Providers */
 export { createGateway, gateway, type GatewayModelId } from '@ai-sdk/gateway';
-/** @group Schema */
-export {
-  asSchema,
-  jsonSchema,
-  zodSchema,
-  type FlexibleSchema,
-  type InferSchema,
-  type Schema,
-} from '@ai-sdk/provider-utils';
-/** @group Utilities */
-export {
-  createIdGenerator,
-  generateId,
-  type IdGenerator,
-} from '@ai-sdk/provider-utils';
-/** @group Tools */
-export {
-  dynamicTool,
-  tool,
-  type InferToolInput,
-  type InferToolOutput,
-  type Tool,
-  type ToolApprovalRequest,
-  type ToolApprovalResponse,
-  type ToolCallOptions,
-  type ToolExecutionOptions,
-  type ToolExecuteFunction,
-} from '@ai-sdk/provider-utils';
-/** @group Streaming */
-export { parseJsonEventStream } from '@ai-sdk/provider-utils';
 
 // directory exports
 export * from './agent';

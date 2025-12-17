@@ -1,8 +1,11 @@
 {
   "$schema": "https://typedoc.org/schema.json",
   "entryPoints": [
-    "src/index.ts"
+    "src/index.ts",
+    "../provider/src/index.ts",
+    "../provider-utils/src/index.ts"
   ],
+  "entryPointStrategy": "resolve",
   "out": "docs",
   "name": "AI SDK",
   "readme": "README.md",
@@ -30,7 +33,7 @@
     "source-order"
   ],
   "categorizeByGroup": true,
-  "categoryOrder": [
+  "groupOrder": [
     "Text Generation",
     "Object Generation",
     "Image Generation",
@@ -48,20 +51,26 @@
     "Prompts",
     "Streaming",
     "Errors",
+    "HTTP Utilities",
+    "ID Generation",
+    "Error Handling",
     "JSON Utilities",
     "Data Utilities",
     "Retry Utilities",
     "Download Utilities",
     "Other Utilities",
+    "Utilities",
     "Usage",
     "Warnings",
     "Schema",
+    "Telemetry & Logging",
     "*"
   ],
   "navigation": {
-    "includeCategories": true,
+    "includeCategories": false,
     "includeGroups": true
   },
+  "useHostedBaseUrlForAbsoluteLinks": true,
   "validation": {
     "notExported": false,
     "invalidLink": true,
