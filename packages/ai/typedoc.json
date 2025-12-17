@@ -1,0 +1,71 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": [
+    "src/index.ts"
+  ],
+  "out": "docs",
+  "name": "AI SDK",
+  "readme": "README.md",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeInternal": true,
+  "excludeExternals": false,
+  "externalPattern": [
+    "**/node_modules/**",
+    "**/dist/**"
+  ],
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.test-d.ts",
+    "**/__snapshots__/**",
+    "**/node_modules/**",
+    "**/dist/**",
+    "tsup.config.ts",
+    "internal.d.ts",
+    "test.d.ts"
+  ],
+  "tsconfig": "tsconfig.json",
+  "sort": [
+    "source-order"
+  ],
+  "categorizeByGroup": true,
+  "categoryOrder": [
+    "Text Generation",
+    "Object Generation",
+    "Image Generation",
+    "Speech Generation",
+    "Embedding",
+    "Transcription",
+    "Reranking",
+    "Agent",
+    "UI",
+    "Tools",
+    "Models",
+    "Model Middleware",
+    "Providers",
+    "Gateway",
+    "Prompts",
+    "Streaming",
+    "Errors",
+    "JSON Utilities",
+    "Data Utilities",
+    "Retry Utilities",
+    "Download Utilities",
+    "Other Utilities",
+    "Usage",
+    "Warnings",
+    "Schema",
+    "*"
+  ],
+  "navigation": {
+    "includeCategories": true,
+    "includeGroups": true
+  },
+  "validation": {
+    "notExported": false,
+    "invalidLink": true,
+    "notDocumented": false
+  }
+}
+
